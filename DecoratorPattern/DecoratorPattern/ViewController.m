@@ -25,11 +25,11 @@
     
     [super viewDidLoad];
     
-    // 装饰器对象
+    // 第一种方法：常规的装饰器对象
     DecoratorGamePlay *gamePlayDecorator = [DecoratorGamePlay new];
     [gamePlayDecorator cheat];
     
-    // category模拟的装饰器
+    // 第二种方法：使用cocoa框架category的方式实现的装饰器
     GamePlay *gamePlay = [GamePlay new];
     [gamePlay cheat];
 }
